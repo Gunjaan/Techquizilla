@@ -5,8 +5,21 @@ void main() {
   runApp(
     const MaterialApp(
       home: Scaffold(
-        body: HomePage(),
-        backgroundColor: Color.fromARGB(255, 24, 190, 193),
+        // appBar: AppBar(
+        //   backgroundColor: const Color.fromARGB(143, 122, 63, 180),
+        //   title: const Text('Quiz App'),
+        // ),
+        body: DecoratedBox(
+          decoration: BoxDecoration(
+            gradient: LinearGradient(
+              colors: [
+                Color.fromARGB(255, 132, 189, 175),
+                Color.fromARGB(255, 71, 150, 132),
+              ],
+            ),
+          ),
+          child: HomePage(),
+        ),
       ),
     ),
   );
