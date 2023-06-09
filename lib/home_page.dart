@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage(this.startQuiz, {super.key});
+
+  final void Function() startQuiz;
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Container(
+  Widget build(context) {
+    return Center(
+      child: Container(
         decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage('assets/images/bg.jpeg'),
@@ -17,7 +19,8 @@ class HomePage extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Image.asset('assets/images/finallogo.png'),
+              Image.asset('assets/images/finallogo.png',
+                  color: const Color.fromARGB(209, 8, 0, 14)),
               const SizedBox(height: 120),
               const Text(
                 'Test your Tech Knowledge',
@@ -37,18 +40,16 @@ class HomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
+                  backgroundColor: const Color.fromARGB(143, 100, 46, 154),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
-                  primary: const Color.fromARGB(143, 122, 63, 180),
                   textStyle: const TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
                     fontFamily: 'CustomFont',
                   ),
                 ),
-                onPressed: () {
-                  // Add your logic here
-                },
+                onPressed: startQuiz,
                 child: const Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
