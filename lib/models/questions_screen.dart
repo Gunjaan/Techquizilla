@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app_flutter/options_button.dart';
+import 'package:quiz_app_flutter/models/options_button.dart';
+import 'package:quiz_app_flutter/data/questions.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key});
@@ -11,10 +12,20 @@ class QuestionsScreen extends StatefulWidget {
 }
 
 class _QuestionsScreenState extends State<QuestionsScreen> {
+  var currentQuestionIndex = 0;
+
+  void answerQuestion() {
+    setState(() {
+      currentQuestionIndex = currentQuestionIndex + 1;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
+    final currentQuestion = questions[currentQuestionIndex];
     return Center(
       child: Container(
+        padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 0),
         decoration: const BoxDecoration(
           image: DecorationImage(
               image: AssetImage('assets/images/quesbg.jpeg'),
@@ -23,33 +34,25 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              const Center(
+              Center(
                 child: Text(
-                  "If you use either Telnet or FTP, which is the highest layer you are using to transmit data?",
-                  style: TextStyle(
+                  currentQuestion.text,
+                  style: const TextStyle(
                       color: Color.fromARGB(255, 0, 0, 0),
-                      fontSize: 15,
+                      fontSize: 18,
                       fontWeight: FontWeight.bold),
+                  textAlign: TextAlign.center,
                 ),
               ),
               const SizedBox(height: 30),
-              OptionsButton(
-                text: "Application",
-                onTap: () {},
-              ),
-              OptionsButton(
-                text: "Presentation",
-                onTap: () {},
-              ),
-              OptionsButton(
-                text: "Session",
-                onTap: () {},
-              ),
-              OptionsButton(
-                text: "Transport",
-                onTap: () {},
-              ),
+              ...currentQuestion.getShuffledAnswers().map((answer) {
+                return OptionsButton(
+                  text: answer,
+                  onTap: answerQuestion,
+                );
+              })
             ],
           ),
         ),

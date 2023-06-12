@@ -1,0 +1,61 @@
+"version": "0.2.0",
+"configurations": [
+  {
+    "name": "quiz_app_flutter",
+    "request": "launch",
+    "type": "dart"
+  },
+  {
+    "name": "quiz_app_flutter (profile mode)",
+    "request": "launch",
+    "type": "dart",
+    "flutterMode": "profile"
+  },
+  {
+    "name": "quiz_app_flutter (release mode)",
+    "request": "launch",
+    "type": "dart",
+    "flutterMode": "release"
+  }
+]
+}
+ChatGPT
+Thank you for sharing your launch configuration. Based on the provided configuration, it appears that you have defined three launch configurations for your Flutter application: "quiz_app_flutter", "quiz_app_flutter (profile mode)", and "quiz_app_flutter (release mode)".
+
+However, the launch configurations you shared are missing the "program" attribute, which is necessary to specify the entry point of your Flutter application. Without the "program" attribute, the launch configuration doesn't know which file to run.
+
+To fix this issue, you need to add the "program" attribute to each of your launch configurations and set it to the path of your main entry file (usually "lib/main.dart"). Here's an example of how to update your launch configuration:
+
+json
+Copy code
+{
+"version": "0.2.0",
+"configurations": [
+  {
+    "name": "quiz_app_flutter",
+    "request": "launch",
+    "type": "dart",
+    "program": "lib/main.dart"
+  },
+  {
+    "name": "quiz_app_flutter (profile mode)",
+    "request": "launch",
+    "type": "dart",
+    "flutterMode": "profile",
+    "program": "lib/main.dart"
+  },
+  {
+    "name": "quiz_app_flutter (release mode)",
+    "request": "launch",
+    "type": "dart",
+    "flutterMode": "release",
+    "program": "lib/main.dart"
+  }
+]
+}
+
+
+
+
+
+
