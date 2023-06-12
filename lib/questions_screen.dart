@@ -1,4 +1,5 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
+import 'package:quiz_app_flutter/options_button.dart';
 
 class QuestionsScreen extends StatefulWidget {
   const QuestionsScreen({super.key});
@@ -12,10 +13,45 @@ class QuestionsScreen extends StatefulWidget {
 class _QuestionsScreenState extends State<QuestionsScreen> {
   @override
   Widget build(BuildContext context) {
-    return const CupertinoApp(
-      home: CupertinoPageScaffold(
+    return Center(
+      child: Container(
+        decoration: const BoxDecoration(
+          image: DecorationImage(
+              image: AssetImage('assets/images/quesbg.jpeg'),
+              fit: BoxFit.cover),
+        ),
         child: Center(
-          child: Text('Questions Screen'),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              const Center(
+                child: Text(
+                  "If you use either Telnet or FTP, which is the highest layer you are using to transmit data?",
+                  style: TextStyle(
+                      color: Color.fromARGB(255, 0, 0, 0),
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold),
+                ),
+              ),
+              const SizedBox(height: 30),
+              OptionsButton(
+                text: "Application",
+                onTap: () {},
+              ),
+              OptionsButton(
+                text: "Presentation",
+                onTap: () {},
+              ),
+              OptionsButton(
+                text: "Session",
+                onTap: () {},
+              ),
+              OptionsButton(
+                text: "Transport",
+                onTap: () {},
+              ),
+            ],
+          ),
         ),
       ),
     );
