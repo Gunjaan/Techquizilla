@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage(this.startQuiz, {super.key});
@@ -21,18 +22,23 @@ class HomePage extends StatelessWidget {
             children: [
               Image.asset('assets/images/finallogo.png',
                   color: const Color.fromARGB(209, 8, 0, 14)),
-              const SizedBox(height: 120),
-              const Text(
+              const SizedBox(height: 64),
+              Text(
                 'Test your Tech Knowledge',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                style: GoogleFonts.lato(
+                  color: const Color.fromARGB(206, 7, 0, 15),
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(height: 6),
-              const Text(
+              Text(
                 'Just a click away.',
-                style: TextStyle(
-                    fontSize: 15,
-                    color: Color.fromARGB(143, 122, 63, 180),
-                    fontWeight: FontWeight.bold),
+                style: GoogleFonts.lato(
+                  color: const Color.fromARGB(143, 122, 63, 180),
+                  fontSize: 16,
+                  fontWeight: FontWeight.bold,
+                ),
               ),
               const SizedBox(height: 25),
               ElevatedButton(
@@ -50,19 +56,18 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 onPressed: startQuiz,
-                child: const Row(
+                child: Row(
                   mainAxisSize: MainAxisSize.min,
                   children: [
                     Text(
                       'Get Started ',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold,
+                      style: GoogleFonts.lato(
                         color: Colors.white,
-                        fontSize: 14,
-                        fontFamily: 'CustomFont',
+                        fontSize: 16,
+                        fontWeight: FontWeight.bold,
                       ),
                     ),
-                    Icon(
+                    const Icon(
                       Icons.arrow_forward,
                       color: Colors.white,
                     ),

@@ -2,20 +2,23 @@ import '../models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'What are the main building blocks of Flutter UIs?',
+    'UNIX is written in which language?',
     [
-      'Widgets',
-      'Components',
-      'Blocks',
-      'Functions',
+      'C#',
+      'C++',
+      'C',
+      '.Net',
     ],
   ),
-  QuizQuestion('How are Flutter UIs built?', [
-    'By combining widgets in code',
-    'By combining widgets in a visual editor',
-    'By defining widgets in config files',
-    'By using XCode for iOS and Android Studio for Android',
-  ]),
+  QuizQuestion(
+    'Identify among the following servers which allow LAN users to share data.',
+    [
+      'Communication server',
+      'Point server',
+      'File server',
+      'Data Server',
+    ],
+  ),
   QuizQuestion(
     'What\'s the purpose of a StatefulWidget?',
     [
