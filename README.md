@@ -26,6 +26,9 @@ Home screen -> Quiz Starts -> Results Page
 
 <img width="200" alt="Screenshot 2023-06-16 at 7 03 31 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/1752a391-0a34-4bf2-8575-93b5a895bf09">
 
+
+<br>
+
 <img width="200" alt="Screenshot 2023-06-16 at 7 03 23 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/1bb57df8-52ce-4eba-a8d5-5642af94d489">
 
 <img width="200" alt="Screenshot 2023-06-16 at 7 06 15 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/042b3f78-3b67-473d-b010-48b44489a138">
