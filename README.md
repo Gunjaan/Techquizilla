@@ -40,17 +40,6 @@ Home screen -> Quiz Starts -> Results Page
 
 
 
----
-
-Results Screen
-<img width="331" alt="Screenshot 2023-06-16 at 2 40 11 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/c6b11125-8493-4f25-912c-7f00ad211c03">
-
-
-https://github.com/Gunjaan/Techquizilla/assets/74871887/2b597411-350c-4ddd-801d-46940d52a284
-
-
-
-
 
 
 
