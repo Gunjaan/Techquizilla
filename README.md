@@ -15,23 +15,36 @@ For help getting started with Flutter development, view the
 samples, guidance on mobile development, and a full API reference.
 
 ---
+
 ## Project Screenshots:
-Home screen <br><br>
-<img width="150" alt="" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/7ea098e7-efc5-47a2-be3b-27f92487fc77">
+Home screen -> Quiz Starts -> Results Page
+
+
+<img width="200" alt="Screenshot 2023-06-16 at 7 01 29 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/f482eade-10b0-42af-9017-56875c17eed4">
+
+<img width="200" alt="Screenshot 2023-06-16 at 7 03 49 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/2265dc27-955c-441a-b85e-ebaebffe0a7e">
+
+<img width="200" alt="Screenshot 2023-06-16 at 7 03 31 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/1752a391-0a34-4bf2-8575-93b5a895bf09">
+
+<img width="200" alt="Screenshot 2023-06-16 at 7 03 23 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/1bb57df8-52ce-4eba-a8d5-5642af94d489">
+
+<img width="200" alt="Screenshot 2023-06-16 at 7 06 15 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/042b3f78-3b67-473d-b010-48b44489a138">
+
+<img width="200" alt="Screenshot 2023-06-16 at 7 07 12 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/55e1ad7f-1da9-4e36-bc28-953d1b6a1e17">
+
+
 
 ---
-Quiz Starts <br><br>
 
 
- <img width="150" alt="" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/414faa7e-d51a-4f77-ace6-f3fd31b73603"> 
- <img width="150" alt="" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/e9108432-b92d-4b5f-952f-06a1b0afedee">
- <img width="150" alt="" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/98d0506b-c637-4e9d-9d0e-fb09c6221749">
+
+
 
 ---
 
-Results Screen <br><br>
-<img width="150" alt="" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/f477666b-d72f-41bb-8137-a4c380c04bee">
-<img width="150" alt="" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/50ac6bc0-9b9b-45aa-8e27-89e7fa36856b">
+Results Screen
+<img width="331" alt="Screenshot 2023-06-16 at 2 40 11 PM" src="https://github.com/Gunjaan/Techquizilla/assets/74871887/c6b11125-8493-4f25-912c-7f00ad211c03">
+
 
 https://github.com/Gunjaan/Techquizilla/assets/74871887/2b597411-350c-4ddd-801d-46940d52a284
 
