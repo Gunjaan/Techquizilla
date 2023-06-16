@@ -51,20 +51,22 @@ class ResultsScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                  "Congratulations, you have completed the quiz successfully!",
-                  style: TextStyle(
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(197, 100, 46, 154),
-                  )),
+                "Congratulations, you have completed the quiz successfully!",
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(197, 100, 46, 154),
+                ),
+              ),
               const SizedBox(height: 30),
               Text(
-                  "SCORE: You answered $correctlyMarked out of $totalQuestions questions correctly!",
-                  style: const TextStyle(
-                    fontSize: 15,
-                    fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(197, 27, 9, 45),
-                  )),
+                "SCORE: You answered $correctlyMarked out of $totalQuestions questions correctly!",
+                style: const TextStyle(
+                  fontSize: 15,
+                  fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(197, 27, 9, 45),
+                ),
+              ),
               const SizedBox(height: 10),
               QuestionSummary(
                 summaryData: summaryData,
@@ -79,6 +81,14 @@ class ResultsScreen extends StatelessWidget {
                 ),
                 onPressed: () {},
                 child: const Text("Play Again"),
+              ),
+              const SizedBox(height: 20),
+              const Text(
+                "Made by: @gunjaan",
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Colors.grey,
+                ),
               ),
             ],
           ),
