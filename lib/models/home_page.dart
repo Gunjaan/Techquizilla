@@ -46,7 +46,7 @@ class HomePage extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(30),
                   ),
-                  backgroundColor: const Color.fromARGB(143, 151, 97, 206),
+                  backgroundColor: Color.fromARGB(143, 112, 54, 169),
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                   textStyle: const TextStyle(

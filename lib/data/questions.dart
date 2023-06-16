@@ -2,129 +2,120 @@ import '../models/quiz_question.dart';
 
 const questions = [
   QuizQuestion(
-    'Which programming language is commonly used for developing UNIX?',
+    'Which programming language is commonly used for developing operating systems like UNIX?',
     [
       'C',
-      'C++',
       'Java',
       'Python',
+      'JavaScript',
     ],
   ),
   QuizQuestion(
-    'Which type of server allows LAN users to share data?',
+    'Which type of server allows LAN users to share files and data?',
     [
       'File server',
       'Web server',
+      'Application server',
       'Database server',
-      'Email server',
     ],
   ),
   QuizQuestion(
-    'What is the purpose of a hash function?',
+    'What is the purpose of a constructor in object-oriented programming?',
     [
-      'To convert data into a fixed-size string of characters',
-      'To encrypt data for secure transmission',
-      'To compress data for efficient storage',
-      'To validate data integrity',
+      'Initialize object state',
+      'Define class methods',
+      'Create new objects',
+      'Handle exceptions',
     ],
   ),
   QuizQuestion(
-    'What is the time complexity of searching for an element in a binary search tree?',
+    'Which data structure is typically used to implement a stack?',
+    [
+      'Array',
+      'Linked list',
+      'Queue',
+      'Tree',
+    ],
+  ),
+  QuizQuestion(
+    'What is the time complexity of searching for an element in a balanced binary search tree?',
     [
       'O(log n)',
       'O(n)',
+      'O(n log n)',
       'O(1)',
-      'O(n^2)',
     ],
   ),
   QuizQuestion(
-    'What is the purpose of a primary key in a database table?',
+    'Which sorting algorithm has the worst-case time complexity of O(n^2)?',
     [
-      'To uniquely identify each record in the table',
-      'To sort the records in the table',
-      'To establish a relationship with another table',
-      'To perform mathematical operations on the table',
+      'Bubble sort',
+      'Merge sort',
+      'Quick sort',
+      'Insertion sort',
     ],
   ),
   QuizQuestion(
-    'What is the difference between TCP and UDP?',
+    'Which data structure uses the LIFO (Last In, First Out) principle?',
     [
-      'TCP is connection-oriented, while UDP is connectionless',
-      'TCP is faster than UDP',
-      'TCP is used for streaming media, while UDP is used for email communication',
-      'TCP is more reliable than UDP',
+      'Stack',
+      'Queue',
+      'Heap',
+      'Linked list',
     ],
   ),
   QuizQuestion(
     'What is the purpose of an index in a database?',
     [
-      'To improve the performance of data retrieval operations',
-      'To encrypt sensitive data',
-      'To enforce data integrity constraints',
-      'To store backup copies of the database',
+      'Improve query performance',
+      'Define table relationships',
+      'Enforce data integrity',
+      'Handle concurrency control',
     ],
   ),
   QuizQuestion(
-    'Which data structure is typically used to implement a LIFO (Last-In-First-Out) behavior?',
+    'Which algorithm is used for finding the shortest path in a weighted graph?',
     [
+      'Dijkstra\'s algorithm',
+      'Breadth-first search',
+      'Depth-first search',
+      'Prim\'s algorithm',
+    ],
+  ),
+  QuizQuestion(
+    'Which data structure is used for implementing a hash table?',
+    [
+      'Array',
+      'Linked list',
+      'Tree',
+      'Heap',
+    ],
+  ),
+  QuizQuestion(
+    'What is the time complexity of inserting an element at the beginning of an array?',
+    [
+      'O(n)',
+      'O(log n)',
+      'O(1)',
+      'O(n^2)',
+    ],
+  ),
+  QuizQuestion(
+    'Which encryption algorithm is commonly used for secure communication over the internet?',
+    [
+      'AES',
+      'RSA',
+      'DES',
+      'Blowfish',
+    ],
+  ),
+  QuizQuestion(
+    'Which data structure is suitable for implementing a priority queue?',
+    [
+      'Heap',
       'Stack',
       'Queue',
       'Linked list',
-      'Tree',
-    ],
-  ),
-  QuizQuestion(
-    'What is the role of an operating system?',
-    [
-      'To manage computer hardware and software resources',
-      'To develop applications',
-      'To connect to the internet',
-      'To perform data analysis',
-    ],
-  ),
-  QuizQuestion(
-    'What is the purpose of a compiler?',
-    [
-      'To translate high-level programming code into machine code',
-      'To execute programs',
-      'To debug programs',
-      'To store and retrieve data',
-    ],
-  ),
-  QuizQuestion(
-    'Which sorting algorithm has the best average-case time complexity?',
-    [
-      'Quick sort',
-      'Bubble sort',
-      'Insertion sort',
-      'Selection sort',
-    ],
-  ),
-  QuizQuestion(
-    'What is the role of a cache memory?',
-    [
-      'To store frequently accessed data for faster retrieval',
-      'To perform arithmetic and logical operations',
-      'To manage input and output devices',
-      'To control the flow of data within a computer system',
-    ],
-  ),
-  QuizQuestion(
-    'What is the purpose of an object-oriented programming paradigm?',
-    [
-      'To organize code into reusable and modular components',
-      'To write efficient algorithms',
-      'To implement low-level system operations',
-      'To analyze and visualize data',
-    ],
-  ),
-  QuizQuestion(
-    'What is the purpose of an API (Application Programming Interface)?',
-    [
-      'To define how software components should interact and communicate with each other',
-      'To manage database transactions',
-      'To optimize code execution',
-      'To secure network connections',
     ],
   ),
 ];

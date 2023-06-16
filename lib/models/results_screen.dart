@@ -53,11 +53,11 @@ class ResultsScreen extends StatelessWidget {
               const Text(
                   "Congratulations, you have completed the quiz successfully!",
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 20,
                     fontWeight: FontWeight.bold,
-                    color: Color.fromARGB(197, 93, 38, 148),
+                    color: Color.fromARGB(197, 100, 46, 154),
                   )),
-              const SizedBox(height: 10),
+              const SizedBox(height: 30),
               Text(
                   "SCORE: You answered $correctlyMarked out of $totalQuestions questions correctly!",
                   style: const TextStyle(
@@ -71,9 +71,13 @@ class ResultsScreen extends StatelessWidget {
               ),
               const SizedBox(height: 10),
               ElevatedButton(
-                onPressed: () {},
                 style: ElevatedButton.styleFrom(
-                    backgroundColor: const Color.fromARGB(221, 87, 30, 125)),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  backgroundColor: const Color.fromARGB(200, 98, 38, 147),
+                ),
+                onPressed: () {},
                 child: const Text("Play Again"),
               ),
             ],

@@ -29,52 +29,42 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     final currentQuestion = questions[currentQuestionIndex];
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          "TechQuizilla",
-          style: TextStyle(
-            fontSize: 20,
-            fontWeight: FontWeight.bold,
-            color: Colors.white,
-          ),
-        ),
+        title: const Text("TechQuizilla"),
         backgroundColor: const Color.fromARGB(198, 100, 46, 154),
         automaticallyImplyLeading: false,
         leading: IconButton(
           onPressed: () {},
-          icon: const Icon(
-            Icons.arrow_back_ios,
-            color: Colors.white,
-          ),
+          icon: const Icon(Icons.arrow_back_ios),
         ),
       ),
       body: Container(
-        padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 0),
+        padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 10),
         decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage('assets/images/quesbg.jpeg'),
-            fit: BoxFit.cover,
-          ),
-        ),
+            image: DecorationImage(
+                image: AssetImage('assets/images/quesbg.jpeg'),
+                fit: BoxFit.cover)),
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
               Center(
-                child: Text(
-                  currentQuestion.text,
-                  style: GoogleFonts.lato(
-                    color: const Color.fromARGB(198, 100, 46, 154),
-                    fontSize: 20,
-                    fontWeight: FontWeight.bold,
+                child: Expanded(
+                  child: Text(
+                    currentQuestion.text,
+                    style: GoogleFonts.lato(
+                      color: const Color.fromARGB(198, 100, 46, 154),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                    textAlign: TextAlign.center,
                   ),
-                  textAlign: TextAlign.center,
                 ),
               ),
               const SizedBox(height: 30),
               ...currentQuestion.getShuffledAnswers().map((answer) {
-                return Padding(
-                  padding: const EdgeInsets.symmetric(vertical: 8),
+                return SizedBox(
+                  width: 150,
                   child: OptionsButton(
                     text: answer,
                     onTap: () {
