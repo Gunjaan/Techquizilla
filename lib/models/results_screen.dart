@@ -27,6 +27,12 @@ class ResultsScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final summaryData = getSummaryData();
+    final totalQuestions = questions.length;
+    final correctlyMarked = summaryData.where((data) {
+      return data['correct_answer'] == data['user_answer'];
+    }).length;
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("TechQuizilla"),
@@ -45,17 +51,29 @@ class ResultsScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const Text(
-                "Congratulations! You have completed the quiz successfully!",
-              ),
+                  "Congratulations, you have completed the quiz successfully!",
+                  style: TextStyle(
+                    fontSize: 18,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(197, 93, 38, 148),
+                  )),
               const SizedBox(height: 10),
-              const Text("SCORE: You answered x out of y questions correctly!"),
+              Text(
+                  "SCORE: You answered $correctlyMarked out of $totalQuestions questions correctly!",
+                  style: const TextStyle(
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(197, 27, 9, 45),
+                  )),
               const SizedBox(height: 10),
               QuestionSummary(
-                summaryData: getSummaryData(),
+                summaryData: summaryData,
               ),
               const SizedBox(height: 10),
               ElevatedButton(
                 onPressed: () {},
+                style: ElevatedButton.styleFrom(
+                    backgroundColor: const Color.fromARGB(221, 87, 30, 125)),
                 child: const Text("Play Again"),
               ),
             ],

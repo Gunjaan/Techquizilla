@@ -29,20 +29,32 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
     final currentQuestion = questions[currentQuestionIndex];
     return Scaffold(
       appBar: AppBar(
-        title: const Text("TechQuizilla"),
+        title: const Text(
+          "TechQuizilla",
+          style: TextStyle(
+            fontSize: 20,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
         backgroundColor: const Color.fromARGB(198, 100, 46, 154),
         automaticallyImplyLeading: false,
         leading: IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.arrow_back_ios),
+          icon: const Icon(
+            Icons.arrow_back_ios,
+            color: Colors.white,
+          ),
         ),
       ),
       body: Container(
         padding: const EdgeInsets.symmetric(horizontal: 35, vertical: 0),
         decoration: const BoxDecoration(
-            image: DecorationImage(
-                image: AssetImage('assets/images/quesbg.jpeg'),
-                fit: BoxFit.cover)),
+          image: DecorationImage(
+            image: AssetImage('assets/images/quesbg.jpeg'),
+            fit: BoxFit.cover,
+          ),
+        ),
         child: Center(
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -61,11 +73,14 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
               ),
               const SizedBox(height: 30),
               ...currentQuestion.getShuffledAnswers().map((answer) {
-                return OptionsButton(
-                  text: answer,
-                  onTap: () {
-                    answerQuestion(answer);
-                  },
+                return Padding(
+                  padding: const EdgeInsets.symmetric(vertical: 8),
+                  child: OptionsButton(
+                    text: answer,
+                    onTap: () {
+                      answerQuestion(answer);
+                    },
+                  ),
                 );
               })
             ],
